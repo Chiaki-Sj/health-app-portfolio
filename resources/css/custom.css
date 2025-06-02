@@ -1,0 +1,6 @@
+body {
+  background: linear-gradient(135deg, #f0f4f7, #e8f0fe), url("/images/login-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
