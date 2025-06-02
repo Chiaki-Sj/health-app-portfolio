@@ -44,4 +44,9 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/check-locale', function () {
         return 'Current locale: ' . session('locale', 'not set');
     });
+
+    Route::get('/test', function () {
+    return 'Hello from Heroku!';
+    });
+
 });
