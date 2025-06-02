@@ -23,6 +23,9 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/', function () {
         return view('dashboard');
     })->name('dashboard');
+    Route::get('/', function () {
+        return 'Laravel is working on Heroku!';
+    });
 
     Route::get('/profile/{id}', [ProfileController::class, 'show'])->name('profile.show');
     Route::get('/profile/{id}/edit', [ProfileController::class, 'edit'])->name('profile.edit');
@@ -46,7 +49,6 @@ Route::middleware(['auth'])->group(function () {
     });
 
     Route::get('/test', function () {
-    return 'Hello from Heroku!';
+        return 'Hello from Heroku!';
     });
-
 });
